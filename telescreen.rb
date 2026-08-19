@@ -5,21 +5,21 @@
 class Telescreen < Formula
   desc "A screen for monitoring your daily job, in your terminal."
   homepage "https://github.com/maxgio92/telescreen"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/maxgio92/telescreen/releases/download/v0.1.1/telescreen_0.1.1_darwin_amd64.tar.gz"
-      sha256 "559538ef8cc7bc83606c46ab69442a6344ccc822cd0c2b0818bd5740ea3501f6"
+      url "https://github.com/maxgio92/telescreen/releases/download/v0.1.2/telescreen_0.1.2_darwin_amd64.tar.gz"
+      sha256 "ea56e008b479717787274beaa518eb83800e145363e0ec1bfab06d5e70d1a489"
 
       define_method(:install) do
         bin.install "telescreen"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/maxgio92/telescreen/releases/download/v0.1.1/telescreen_0.1.1_darwin_arm64.tar.gz"
-      sha256 "f7cad1197b8e76f1faf27d057eee5dc4be8ff62fef9e0f264f3a3612fe1ddc17"
+      url "https://github.com/maxgio92/telescreen/releases/download/v0.1.2/telescreen_0.1.2_darwin_arm64.tar.gz"
+      sha256 "8380d05e59bd1b3be6a92f479c2a9ca45a3684421172c99ff81daf4bb6c02c4a"
 
       define_method(:install) do
         bin.install "telescreen"
@@ -29,15 +29,15 @@ class Telescreen < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/maxgio92/telescreen/releases/download/v0.1.1/telescreen_0.1.1_linux_amd64.tar.gz"
-      sha256 "408f5dd5466f259a0388f675688a4399cbc81fabb9964eb403e764446ae5c21e"
+      url "https://github.com/maxgio92/telescreen/releases/download/v0.1.2/telescreen_0.1.2_linux_amd64.tar.gz"
+      sha256 "b6a35d305630b0b94062313eb73f971cfe785fca394123404689ae3225942a7c"
       define_method(:install) do
         bin.install "telescreen"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/maxgio92/telescreen/releases/download/v0.1.1/telescreen_0.1.1_linux_arm64.tar.gz"
-      sha256 "0438bb1bbee9d663e2152ce5af01b27f4e28c5fcf801b22efd5504048e6a8728"
+      url "https://github.com/maxgio92/telescreen/releases/download/v0.1.2/telescreen_0.1.2_linux_arm64.tar.gz"
+      sha256 "368965893a420c3191cd2b196cfa209d00ca48fec52af7ec4ddfc2cadb629bcc"
       define_method(:install) do
         bin.install "telescreen"
       end
